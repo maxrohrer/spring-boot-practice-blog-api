@@ -3,19 +3,19 @@ package com.max.blogAPI;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BlogMockData {
+public class BlogFactory {
 
     private List<Blog> blogs;
 
-    private static BlogMockData instance = null;
-    public static BlogMockData getInstance() {
+    private static BlogFactory instance = null;
+    public static BlogFactory getInstance() {
         if(instance == null) {
-            instance = new BlogMockData();
+            instance = new BlogFactory();
         }
         return instance;
     }
 
-    public BlogMockData(){
+    public BlogFactory(){
         blogs = new ArrayList<Blog>();
         blogs.add(new Blog(1, "Go up, up and away with your Google Assistant",
                 "With holiday travel coming up, and 2018 just around the corner, " +
